@@ -63,14 +63,15 @@ export default function ManualCalculator() {
             }
         };
 
-        axios.request(options).then(function (response) {
-            setLoading(false)
-            setCarbonEquivalent(response.data.carbonEquivalent)
-            console.log(response.data);
-        }).catch(function (error) {
-            setLoading(false)
-            console.error(error);
-        });
+        // uncomment the code
+        // axios.request(options).then(function (response) {
+        //     setLoading(false)
+        //     setCarbonEquivalent(response.data.carbonEquivalent)
+        //     console.log(response.data);
+        // }).catch(function (error) {
+        //     setLoading(false)
+        //     console.error(error);
+        // });
         // setTimeout(() => {
         //     setLoading(false)
         //     setCarbonEquivalent('14')

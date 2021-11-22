@@ -215,7 +215,9 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+    compile project(':react-native-get-sms-android')
     compile project(':react-native-vector-icons')
+    implementation project(':react-native-svg')
 
 }
 
