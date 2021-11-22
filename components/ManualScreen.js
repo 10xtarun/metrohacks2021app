@@ -64,14 +64,14 @@ export default function ManualCalculator() {
         };
 
         // uncomment the code
-        // axios.request(options).then(function (response) {
-        //     setLoading(false)
-        //     setCarbonEquivalent(response.data.carbonEquivalent)
-        //     console.log(response.data);
-        // }).catch(function (error) {
-        //     setLoading(false)
-        //     console.error(error);
-        // });
+        axios.request(options).then(function (response) {
+            setLoading(false)
+            setCarbonEquivalent(response.data.carbonEquivalent)
+            console.log(response.data);
+        }).catch(function (error) {
+            setLoading(false)
+            console.error(error);
+        });
         // setTimeout(() => {
         //     setLoading(false)
         //     setCarbonEquivalent('14')
@@ -171,15 +171,15 @@ export default function ManualCalculator() {
                 carbonEquivalent ?
                     <View style={styles.inputContainer}>
                         <Text
-                            style={styles.header}
+                            style={{ marginBottom: 120,...styles.header}}
                         >
                             Your Carbon Equivalent: {carbonEquivalent}
                         </Text>
-                        <Text
+                        {/* <Text
                         style={styles.text}
                         >
                         {(((carbonEquivalent / 1000) * 100) / 100).toFixed(2)}
-                        </Text>
+                        </Text> */}
                     </View>
                     : null
             }

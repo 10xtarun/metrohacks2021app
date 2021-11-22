@@ -42,7 +42,7 @@ const WithCTA = ({ onDone }) => {
                     subtitle: 'Welcome to CO2 Neutral App!',
                     backgroundColor: '#003c8f',
                     image: (
-                        <Icon name="bomb" size={30} />
+                        <Icon name="user-circle" size={50} />
                     ),
                 },
                 {
@@ -50,7 +50,7 @@ const WithCTA = ({ onDone }) => {
                     subtitle: 'To create carbon neutral environment for us, everyone.',
                     backgroundColor: '#5e92f3',
                     image: (
-                        <Icon name="heart" size={30} />
+                        <Icon name="heart" size={50} />
                     ),
                 },
                 {
@@ -63,7 +63,6 @@ const WithCTA = ({ onDone }) => {
                             borderRadius={5}
                             textStyle={{ color: '#003c8f' }}
                             onPress={() => {
-
                                 onDone()
                                 requestPermissions()
                                 // StatusBar.setBarStyle('default')
@@ -72,7 +71,7 @@ const WithCTA = ({ onDone }) => {
                     ),
                     backgroundColor: '#003c8f',
                     image: (
-                        <Icon name="unlock" type="font-awesome" size={100} color="white" />
+                        <Icon name="unlock" type="font-awesome" size={50} color="white" />
                     ),
                 },
             ]}

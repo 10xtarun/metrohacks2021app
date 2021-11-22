@@ -30,7 +30,6 @@ export default function AutoCalculator() {
             },
             (count, smsList) => {
                 setLoadText('sms reading completed')
-                console.log("count: ", count)
                 const sendArr = []
                 const arr = JSON.parse(smsList)
                 arr.forEach(object => {
