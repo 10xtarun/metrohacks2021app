@@ -2,7 +2,6 @@ package com.co2_neutral;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;
-import com.oblador.vectoricons.VectorIconsPackage;
 
 public class MainActivity extends ReactActivity {
 
